@@ -30,7 +30,7 @@ export class NoteComponent implements OnInit {
         this.notebooks = res;
       },
       error => {
-        alert('An error!');
+        alert('Something went wrong while trying to get all notebooks.');
       }
     );
   }
@@ -48,7 +48,7 @@ export class NoteComponent implements OnInit {
         this.notebooks.push(newNotebook);
       },
       error => {
-        alert('An error while saving the notebook');
+        alert('Something went wrong while trying to save a notebook.');
       }
     );
   }
@@ -59,7 +59,7 @@ export class NoteComponent implements OnInit {
 
       },
       error => {
-        alert('An error while saving the notebook');
+        alert('Something went wrong while trying to update a notebook..');
       }
     );
   }
@@ -72,7 +72,7 @@ export class NoteComponent implements OnInit {
           this.notebooks.splice(indexOfNotebook, 1);
         },
         error => {
-          alert('Could not delete notebook');
+          alert('Something went wrong while trying to delete a notebook.');
         }
       );
     }
@@ -84,7 +84,7 @@ export class NoteComponent implements OnInit {
         this.notes = res;
       },
       error => {
-        alert('Something went wrong while got all notes');
+        alert('Something went wrong while trying to get all notes.');
       }
     );
   }
@@ -97,7 +97,7 @@ export class NoteComponent implements OnInit {
           this.notes.splice(IndexOfDeletedNote, 1);
         },
         error => {
-          alert('Something went wrong while tried to delete note');
+          alert('Something went wrong while trying to delete a note');
         }
       );
     }
@@ -118,7 +118,7 @@ export class NoteComponent implements OnInit {
         this.notes.push(note);
       },
       error => {
-        alert('Something get wrong while saving the note');
+        alert('Something went wrong while trying to save a note');
       }
     );
   }
@@ -130,7 +130,7 @@ export class NoteComponent implements OnInit {
         this.notes = res;
       },
       error => {
-        alert('Something went wrong');
+        alert('Something went wrong while trying to select a notebook and get notes from notebook');
       }
     );
   }
@@ -140,7 +140,7 @@ export class NoteComponent implements OnInit {
       res => {
       },
       error => {
-        alert('Something went wrong while updating note.');
+        alert('Something went wrong while trying to update a note.');
       }
     );
   }
