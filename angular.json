@@ -120,5 +120,8 @@
         }
       }
     }},
-  "defaultProject": "notebook-ng-app-a"
+  "defaultProject": "notebook-ng-app-a",
+  "cli": {
+    "analytics": false
+  }
 }
